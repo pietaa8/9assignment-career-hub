@@ -16,15 +16,17 @@ const Homepage = () => {
         <div>
             <Banner></Banner>
             <div className=' mt-10 p-28 text-center'>
-            <h1>Job Category List</h1>
-            <p>Exploring thousands of job opportunities with all the infromation I need.Its my future.</p>
-                {
+            <h1 className='font-extrabold text-lg'>Job Category List</h1>
+            <p className='text-sm'>Exploring thousands of job opportunities with all the infromation I need.Its my future.</p>
+               <div className='flex text-center p-28'>
+               {
                   categories.map(category =><JobCategories
                     key={category.id}
                     category={category}>
                         
                     </JobCategories>)
                 }
+               </div>
             
 
             </div>

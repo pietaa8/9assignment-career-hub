@@ -1,17 +1,17 @@
 import React from 'react';
+import './JobCategories.css'
 
 const JobCategories = ({category}) => {
     const {logo,name,jobs}=category;
     
     return (
-        <div>
+        <div className='category'>
           
-            <div>
                 <img src={logo} alt="" />
                 <h3>{name}</h3>
                 <p>{jobs}</p>
             
-            </div>
+    
 
             
         </div>
