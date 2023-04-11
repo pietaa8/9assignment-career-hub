@@ -1,5 +1,5 @@
 ### Applying For A JOB
-[Live Link to the project]
+live link:https://velvety-haupia-a80c56.netlify.app/appliedJobs
 
 Description
 My Project is about appyling for a job in a renowned job site
