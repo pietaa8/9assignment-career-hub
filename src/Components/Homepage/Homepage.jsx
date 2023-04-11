@@ -30,12 +30,11 @@ const Homepage = () => {
                     </JobCategories>)
                 }
                </div>
+               </div>
                <div className='mt-10 p-28 text-center'>
                <h1 className='font-extrabold text-lg'>Featured Jobs</h1>
             <p className='text-sm'>Exploring thousands of job opportunities with all the infromation I need.Its my future.</p>
-            <div>
-
-            </div>
+            <div className='grid grid-cols-2 gap-4 p-28 mt-2'>
             {
                 jobs.map(job=> <FeaturedJobs
 
@@ -44,11 +43,14 @@ const Homepage = () => {
                 ></FeaturedJobs>)
             }
 
+            </div>
+          
+
 
                </div>
             
 
-            </div>
+            
            
             
         </div>
