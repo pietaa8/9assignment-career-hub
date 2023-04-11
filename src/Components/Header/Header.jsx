@@ -8,11 +8,11 @@ const Header = () => {
             <div className='flex justify-between'>
             <h1 className='text-lg font-extrabold'>My Carrer</h1>
             <div className='text-lg font-semibold'>
-                <a className='ml-0.5' href="">Statistics</a>
-                <a className='ml-0.5' href="">Applied Jobs</a>
-                <a href="">Blogs</a>
+                <a  href="/">Statistics</a>
+                <a href="/appliedJobs">AppliedJobs</a>
+                <a href="/blogs">Blogs</a>
             </div>
-            <button className='button'>Start Applying</button>
+            <button className='button'>StartApplying</button>
             </div>
 
            
