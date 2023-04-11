@@ -8,6 +8,7 @@ const Header = () => {
             <div className='flex justify-between'>
             <h1 className='text-lg font-extrabold'>My Carrer</h1>
             <div className='text-lg font-semibold mr-5'>
+                <a href="/">Home</a>
                 <a href="/statistics">Statistics</a>
                 <a href="/appliedJobs">AppliedJobs</a>
                 <a href="/blogs">Blogs</a>

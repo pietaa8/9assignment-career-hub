@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
 import './JobDetails.css'
 
 const JobDetails = () => {
@@ -14,7 +14,23 @@ const JobDetails = () => {
       }, [jobs, jobId]);
       
 
-    const {jobDescription,jobResponsibility,educationalRequirements,experiences,jobTitle,salary,phone,email}=jobDetails;
+    const {id,companyLogo,companyName,jobDescription,remoteOrOnsite,location,fulltimeOrPartTime,jobResponsibility,educationalRequirements,experiences,jobTitle,salary,phone,email}=jobDetails;
+
+    const handleApplyNow = () => {
+        // Retrieve the current applied jobs from local storage
+        const appliedJobsString = localStorage.getItem('appliedJobs');
+        const appliedJobs = JSON.parse(appliedJobsString) || [];
+      
+        // Add the current job details to the list of applied jobs
+        const { id, jobTitle, companyName, location, salary, fulltimeOrPartTime } = jobDetails;
+        appliedJobs.push({ id, jobTitle, companyName, location, salary, fulltimeOrPartTime });
+      
+        // Save the updated list of applied jobs to local storage
+        localStorage.setItem('appliedJobs', JSON.stringify(appliedJobs));
+      };
+      
+    
+    
 
     
       
@@ -24,7 +40,7 @@ const JobDetails = () => {
 
             <div className='flex w-3/4 h-2/4 mt-10 p-28 text-center mx-52'>
             <div className='job'>
-                <h1 ><span className='job-style'>Job Description:</span>:{jobDescription}</h1>
+                <h1><span className='job-style'>Job Description:</span>{jobDescription}</h1>
                 <p><span className='job-style'>Job Resposibility:</span> {jobResponsibility}</p>
                 <p><span className='job-style'>Educational Requirements:</span>{educationalRequirements}</p>
                 <h3><span className='job-style'>Experiences</span> {experiences}</h3>
@@ -39,7 +55,7 @@ const JobDetails = () => {
                 <p><span className='job-style'>email:</span>{email}</p>
 
 
-                <button className='apply-btn'>Apply Now</button>  
+                <button onClick={handleApplyNow} className='apply-btn'> Apply Now</button>  
 
     
             </div>
