@@ -12,10 +12,9 @@
       "jobResponsibility": "Design, develop, and maintain software products, collaborate with team members to ensure project success, and stay up-to-date with industry trends and best practices.",
       "educationalRequirements": "Bachelor's degree in Computer Science or related field",
       "experiences": "3+ years of experience in software engineering",
-      "contactInformation": {
         "phone": "555-1234",
         "email": "jobs@acmeinc.com"
-      }
+  
     },
     {
       "id": 2,
@@ -30,10 +29,9 @@
       "jobResponsibility": "Develop and implement marketing strategies, manage social media accounts, create engaging content, and measure the effectiveness of marketing campaigns.",
       "educationalRequirements": "Bachelor's degree in Marketing or related field",
       "experiences": "1+ years of experience in marketing",
-      "contactInformation": {
+      
         "phone": "555-5678",
         "email": "jobs@globexcorp.com"
-      }
     },
     {
       "id": 3,
@@ -48,10 +46,9 @@
       "jobResponsibility": "Conduct user research, create wireframes and prototypes, collaborate with developers to implement designs, and stay up-to-date with industry trends and best practices.",
       "educationalRequirements": "Bachelor's degree in Design or related field",
       "experiences": "2+ years of experience in UX design",
-      "contactInformation": {
         "phone": "555-9012",
         "email": "jobs@initech.com"
-      }
+    
     },
     {
       "id": 4,
@@ -66,10 +63,9 @@
       "jobResponsibility": "Conduct user research, create wireframes and prototypes, collaborate with developers to implement designs, and stay up-to-date with industry trends and best practices.",
       "educationalRequirements": "Bachelor's degree in Design or related field",
       "experiences": "2+ years of experience in UX design",
-      "contactInformation": {
         "phone": "555-9012",
         "email": "jobs@initech.com"
-      }
+    
     }
 ]
   
