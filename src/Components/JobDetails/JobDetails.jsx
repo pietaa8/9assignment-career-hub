@@ -22,8 +22,8 @@ const JobDetails = () => {
         const appliedJobs = JSON.parse(appliedJobsString) || [];
       
         // Add the current job details to the list of applied jobs
-        const { id, jobTitle, companyName, location,companyLogo, salary, fulltimeOrPartTime } = jobDetails;
-        appliedJobs.push({ id, jobTitle, companyName,companyLogo, location, salary, fulltimeOrPartTime });
+        const { id, jobTitle, companyName, location,companyLogo, salary, remoteOrOnsite, fulltimeOrPartTime } = jobDetails;
+        appliedJobs.push({ id, jobTitle, companyName,companyLogo, location, salary,remoteOrOnsite, fulltimeOrPartTime });
       
         // Save the updated list of applied jobs to local storage
         localStorage.setItem('appliedJobs', JSON.stringify(appliedJobs));

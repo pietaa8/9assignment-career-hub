@@ -11,5 +11,24 @@
     line-height: 27px;
     
     color: #FFFFFF;
+    margin-left: 50px;
 
+}
+.job-title{
+    width: 342px;
+    height: 33px;
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 33px;
+color: #474747;
+margin-top: 32px;
+margin-bottom: 8px;
+}
+.image{
+    width: 145.86px;
+height: 50px;
+ margin-top: 40px;
+ margin-right: 10px;
 }
