@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner';
 import JobCategories from '../JobCategories/JobCategories';
 import { useLoaderData } from 'react-router-dom';
 import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
+import './Homepage.css'
 
 const Homepage = () => {
     const [categories,setCategories]=useState([])
@@ -44,6 +45,7 @@ const Homepage = () => {
             }
 
             </div>
+            <button className='see-all-btn'>See All Jobs</button>
           
 
 

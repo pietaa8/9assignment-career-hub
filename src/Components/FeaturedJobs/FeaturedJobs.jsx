@@ -2,10 +2,11 @@ import React from 'react';
 import './FeaturedJobs.css'
 import Frame from '../../assets/assetsof/Icons/Frame.png'
 import Frame1 from '../../assets/assetsof/Icons/Frame-4.png'
+import { Link } from 'react-router-dom';
 
 
 const FeaturedJobs = ({job}) => {
-    const{companyLogo,jobTitle,companyName,remoteOrOnsite,fulltimeOrPartTime,location,salary}=job;
+    const{id,companyLogo,jobTitle,companyName,remoteOrOnsite,fulltimeOrPartTime,location,salary}=job;
     return (
         <div className='jobs'>
             <img src={companyLogo} alt="" />
@@ -24,7 +25,10 @@ const FeaturedJobs = ({job}) => {
                 <p>{salary}</p>
 
             </div>
-            <button className='btn'>View Details</button>
+            <button className='btn'>
+           <Link to={`/job/${id}`}>View Details</Link>
+                 </button>
+
 
         </div>
     );
