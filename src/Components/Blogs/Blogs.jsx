@@ -36,7 +36,7 @@ const Blogs = () => {
         re-computes it only if the dependencies change. It's useful for
         optimizing performance by avoiding unnecessary re-calculations of
         expensive computations or calculations in components that render
-        frequently. useMemo is particularly beneficial when dealing with
+        frequently. The useMemo is particularly beneficial when dealing with
         computationally intensive operations or complex data transformations
         within functional components.
       </p>
